@@ -6,8 +6,8 @@ getgenv().Evolution = {
             ["Key"] = "", -- // Enter your Evolution Key
         },
         ["Internal"] = {
-            ["Enabled"] = true, -- // Shows internal ui for evolution
-            ["Auto Show"] = true, -- // Will show the ui when you execute
+            ["Enabled"] = false, -- // Shows internal ui for evolution
+            ["Auto Show"] = false, -- // Will show the ui when you execute
             ["Bind"] = "V", -- // Default keybind to toggle ui
         },
         ["FPS Unlocker"] = { -- // Unlocks your fps (BROKEN ON ELECTRON)
@@ -23,12 +23,12 @@ getgenv().Evolution = {
     },
     ["Silent Aim"] = {
         ["Enabled"] = true, -- // Mouse Redirection
-        ["Mode"] = "FOV", -- // Select mode to select target (FOV, Target )
+        ["Mode"] = "Target", -- // Select mode to select target (FOV, Target )
         ["Target Mode Bind"] = "Q", -- // Keybind for Target mode
-        ["Notify"] = true, -- // Sends notifcation when targeting someone
-        ["Prediction"] = 0.129, -- // Prediction Value
+        ["Notify"] = false, -- // Sends notifcation when targeting someone
+        ["Prediction"] = 0.13448922, -- // Prediction Value
         ["Hit Chance"] = 100, -- // Hit chance (1-100)
-        ["Target Part"] = "Head", -- // Any Hitbox (Head, UpperTorso, HumanoidRootPart, LowerTorso)
+        ["Target Part"] = "HumanoidRootPart", -- // Any Hitbox (Head, UpperTorso, HumanoidRootPart, LowerTorso)
         ["Target Part Offset"] = 0, -- // Offset if you have the target part to head and you set offset to -1.6 you will hit the torso
         ["Nearest Part To Cursor"] = true, -- // Sets target part to the nearest body part to your cursor
         ["Closest Point"] = false, -- // Gets the closest point on the target part (not working rn)
@@ -42,21 +42,21 @@ getgenv().Evolution = {
         },
     },
     ["Cam Lock"] = {
-        ["Enabled"] = false, -- // Adjust your camera position
+        ["Enabled"] = true, -- // Adjust your camera position
         ["Mode"] = "Target_toggle", -- // Select mode to select target (FOV, Target_toggle, Target_hold)
-        ["Target Mode Bind"] = "C", -- // Keybind for Target modes
+        ["Target Mode Bind"] = "Q", -- // Keybind for Target modes
         ["Easing Style"] = "Exponential", -- // https://create.roblox.com/docs/reference/engine/enums/EasingStyle
-        ["Notify"] = true, -- // Sends notifcation when targeting someone
+        ["Notify"] = false, -- // Sends notifcation when targeting someone
         ["Prediction"] = 0.133, -- // Prediction Value
-        ["Target Part"] = "Head", -- // Any Hitbox (Head, UpperTorso, HumanoidRootPart, LowerTorso)
+        ["Target Part"] = "HumanoidRootPart", -- // Any Hitbox (Head, UpperTorso, HumanoidRootPart, LowerTorso)
         ["Target Part Offset"] = 0, -- // Offset if you have the target part to head and you set offset to -1.6 you will hit the torso
         ["Nearest Part To Cursor"] = false,  -- // Sets target part to the nearest body part to your cursor
         ["Closest Point"] = false, -- // Gets the closest point on the target part
-        ["Dot"] = true, -- // Visual (BROKEN ON ELECTRON)
+        ["Dot"] = false, -- // Visual (BROKEN ON ELECTRON)
         ["Line"] = false, -- // Visual (BROKEN ON ELECTRON)
         ["Smoothness"] = {
             ["Enabled"] = true, -- // Prevents snapping when targeting
-            ["Value"] = 0.058, -- // Smoothness Value
+            ["Value"] = 0.1, -- // Smoothness Value
         },
         ["Shake"] = {
             ["Enabled"] = false, -- // Will Shake your camera randomly when targeting
@@ -67,7 +67,7 @@ getgenv().Evolution = {
     },
     ["Global"] = {
         ["Auto Prediction"] = {
-            ["Enabled"] = true, -- // Will automatically set your prediction based on your ping
+            ["Enabled"] = false, -- // Will automatically set your prediction based on your ping
             ["Version"] = "Default", -- // Default, Old, V2, Custom
             ["Custom Settings"] = { -- // Custom Values
                 ["Ping20"]  = 0.12746444,
@@ -138,7 +138,7 @@ getgenv().Evolution = {
         ["Silent Aim"] = {
             ["Visible"] = false, -- // Will toggle if you can see the circle (BROKEN ON ELECTRON)
             ["Filled"] = false, -- // Makes circle filled (really fucking ugly)
-            ["Size"] = 50.1, -- // Size of the circle
+            ["Size"] = 98, -- // Size of the circle
             ["Thickness"] = 1, -- // Thickness of the circle
             ["Transparency"] = 1, -- // Transparency of the circle 0.1 - 1
             ["Color"] = Color3.fromRGB(255,255,255) -- // Circle Color
@@ -146,18 +146,18 @@ getgenv().Evolution = {
         ["Cam Lock"] = {
             ["Visible"] = false, -- // Will toggle if you can see the circle (BROKEN ON ELECTRON)
             ["Filled"] = false, -- // Makes circle filled (really fucking ugly)
-            ["Size"] = 15, -- // Size of the circle
+            ["Size"] = 98, -- // Size of the circle
             ["Thickness"] = 1, -- // Thickness of the circle
             ["Transparency"] = 1, -- // Transparency of the circle 0.1 - 1
             ["Color"] = Color3.fromRGB(255,255,255) -- // Circle Color
         },
     },
     ["Airshot"] = {
-        ["Enabled"] = true, -- // Will adjust your prediction if target is in the air
+        ["Enabled"] = false, -- // Will adjust your prediction if target is in the air
         ["Jump Offset"] = -1.6, -- // Jump Offset
         ["Cam Lock Smoothness"] = {
             ["Enabled"] = true, -- // Will adjust your camlock smoothness if target is in the air
-            ["New Smoothness"] = 0.58, -- // Smoothness value
+            ["New Smoothness"] = 0.3, -- // Smoothness value
         }
     },
     ["Hit Sound"] = {
