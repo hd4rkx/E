@@ -14,7 +14,7 @@ getgenv().Evolution = {
             ["Enabled"] = true, -- // Will unlock your FPS
             ["FPS"] = 999, -- // Maximum FPS
         },
-        ["Intro"] = true, -- // Will show a short intro
+        ["Intro"] = false, -- // Will show a short intro
         ["Stats"] = false, -- // Shows debug stats (BROKEN ON ELECTRON)
         ["Auto Join Discord"] = false, -- // Will Join Discord
         ["Allow Notifications"] = false, -- // Toggles all notifications
