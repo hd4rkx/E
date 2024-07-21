@@ -14,7 +14,7 @@ getgenv().Evolution = {
             ["Enabled"] = true, -- // Will unlock your FPS
             ["FPS"] = 999, -- // Maximum FPS
         },
-        ["Intro"] = false, -- // Will show a short intro
+        ["Intro"] = true, -- // Will show a short intro
         ["Stats"] = false, -- // Shows debug stats (BROKEN ON ELECTRON)
         ["Auto Join Discord"] = false, -- // Will Join Discord
         ["Allow Notifications"] = false, -- // Toggles all notifications
@@ -26,7 +26,7 @@ getgenv().Evolution = {
         ["Mode"] = "Target", -- // Select mode to select target (FOV, Target )
         ["Target Mode Bind"] = "E", -- // Keybind for Target mode
         ["Notify"] = false, -- // Sends notifcation when targeting someone
-        ["Prediction"] = 0.1345, -- // Prediction Value
+        ["Prediction"] = 0.1398237, -- // Prediction Value
         ["Hit Chance"] = 100, -- // Hit chance (1-100)
         ["Target Part"] = "UpperTorso", -- // Any Hitbox (Head, UpperTorso, HumanoidRootPart, LowerTorso)
         ["Target Part Offset"] = 0, -- // Offset if you have the target part to head and you set offset to -1.6 you will hit the torso
